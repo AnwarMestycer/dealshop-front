@@ -1,0 +1,32 @@
+<div class="conatiner mt-4 flex justify-center items-center">
+    <div class="w-[80%] flex justify-around items-center gap-1 border-2 border-black p-1">
+        <div>
+            <p class="text-red-500 font-semibold">
+                Nos services
+            </p>
+            <ul class=" border-[1px] border-black w-[150px] p-2">
+                <li class=""     *ngFor="let service of services">
+                    {{service}}
+                </li>
+             
+            </ul>
+        </div>
+        <div class="grid">
+            <img src="/assets/img/brands.png" class="grid-cols-1 h-[100px] w-[600px]" />
+            <div class="flex col-span-2 gap-2">
+                <p class="text-red-500 font-semibold ">Moyens de paiement </p>
+                <img src="/assets/img/58.png" class="h-[50px] w-full" />
+            </div>
+        </div>
+        <div>
+            <p>Nos Contact</p>
+            <div class="grid grid-cols-2 gap-2">
+                <img src="/assets/img/50.png" class="w-[40px] h-[40px]" />
+                <img src="/assets/img/51.png" class="w-[40px] h-[40px]" />
+                <img src="/assets/img/52.png" class="w-[40px] h-[40px]" />
+                <img src="/assets/img/53.png" class="w-[40px] h-[40px]" />
+
+            </div>
+        </div>
+    </div>
+</div>

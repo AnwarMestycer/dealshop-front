@@ -18,7 +18,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "ds",
+      "prefix": "dealshop",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",

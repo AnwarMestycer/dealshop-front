@@ -1,0 +1,7 @@
+<div class="flex justify-center mt-4">
+    <ul class="flex gap-3 text-lg font-semibold">
+        <li *ngFor="let category of categories" (click)="onSelectCategory(category)">
+            {{category}}
+        </li>
+    </ul>
+</div>

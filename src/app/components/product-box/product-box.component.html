@@ -1,0 +1,19 @@
+<div class="m-2 w-[250px] flex items-center text-center">
+    <div class="flex flex-col items-center  gap-4">
+      <img class="mb-1 h-[200px]"
+      class="w-[120px] h-[150px]" 
+      src="{{product.img_path}}" />
+      <div class="w-full"
+      class="px-6 flex-col justify-between">
+        <div class="flex-col justify-between font-semibold">
+            <h3>{{product.name}}</h3>
+          <span class="text-red-300">{{ product.price | currency }}</span>
+          <span *ngIf="discounted">{{product.discounted_price | currency}}</span>
+          <button>
+            <!--<mat-icon class="text-gray-500" (click)="onAddToCart()">shopping_cart</mat-icon>-->
+          </button>
+        </div>
+      </div>
+    </div>
+</div>
+  
