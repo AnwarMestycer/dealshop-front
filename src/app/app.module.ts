@@ -12,6 +12,7 @@ import { ProductBoxComponent } from './components/product-box/product-box.compon
 import { ProductSliderComponent } from './components/product-slider/product-slider.component';
 import { CategoryComponent } from './components/category/category.component';
 import { transformStatusPipe } from './pipes/transform-status.pipe';
+import { FiltersComponent } from './components/filters/filters.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { transformStatusPipe } from './pipes/transform-status.pipe';
     FooterComponent,
     CategoryComponent,
     transformStatusPipe,
+    FiltersComponent,
   ],
   imports: [
     BrowserModule,

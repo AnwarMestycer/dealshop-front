@@ -7,8 +7,11 @@
       class="px-6 flex-col justify-between">
         <div class="flex-col justify-between font-semibold">
             <h3>{{product.name}}</h3>
-          <span class="text-red-300">{{ product.price | currency }}</span>
-          <span *ngIf="discounted">{{product.discounted_price | currency}}</span>
+            <div class="flex flex-col">
+
+              <span class="text-black" [ngClass]="{'line-through text-red-600': discounted}">{{ product.price | currency }}</span>
+              <span *ngIf="discounted">{{product.discounted_price | currency}}</span>
+            </div>
           <button>
             <!--<mat-icon class="text-gray-500" (click)="onAddToCart()">shopping_cart</mat-icon>-->
           </button>
