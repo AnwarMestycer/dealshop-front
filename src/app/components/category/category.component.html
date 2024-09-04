@@ -1,3 +1,7 @@
+<div class="flex ml-[10%]">
+    <dealshop-filters></dealshop-filters>
+<div>
+    
 <h1 class="text-center font-bold text-4xl m-2" *ngIf="category">{{category}}</h1>
 <h1 class="text-center font-bold text-2xl m-2" *ngIf="status"><p>{{ status | transformStatus }}</p>
 </h1>
@@ -12,4 +16,6 @@
         [discounted] = true
         ></dealshop-product-box>
     </div>
+</div>
+</div>
 </div>
