@@ -1,18 +1,18 @@
-<div class="h-[650px] w-[200px] border-2 border-black flex flex-col gap-3">
+<div class="h-full w-[200px] border-2 border-black flex flex-col gap-3 pt-6">
     <div class="ml-3">
         <h1 class="font-bold text-lg ">Par produit</h1>
         <div class="ml-5">
 
         <fieldset>
-            <input type="checkbox" id="chaussures">
+            <input type="checkbox" id="chaussures" (change)="onCheckboxChange($event, 'chaussures', null, null)">
             <label for="chaussures">Chaussures&bottes</label>
         </fieldset>
         <fieldset>
-            <input type="checkbox" id="hauts">
+            <input type="checkbox" id="hauts" (change)="onCheckboxChange($event, 'hauts', null, null)">
             <label for="hauts">Hauts</label>
         </fieldset>
         <fieldset>
-            <input type="checkbox" id="pantalon">
+            <input type="checkbox" id="pantalon" (change)="onCheckboxChange($event, 'pantalon', null, null)">
             <label for="pantalon">Pantalon&legging</label>
         </fieldset>
     </div>
@@ -23,23 +23,23 @@
         <div class="ml-5">
 
         <fieldset>
-            <input type="checkbox" id="color"/>
+            <input type="checkbox" id="color" (change)="onCheckboxChange($event, null, 'blanc', null)"/>
             <label for="blanc">Blanc</label>
         </fieldset>
         <fieldset>
-            <input type="checkbox" id="color"/>
+            <input type="checkbox" id="color" (change)="onCheckboxChange($event, null, 'noir', null)"/>
             <label for="noir">Noir</label>
         </fieldset>
         <fieldset>
-            <input type="checkbox" id="color"/>
+            <input type="checkbox" id="color" (change)="onCheckboxChange($event, null, 'vert', null)"/>
             <label for="vert">Vert</label>
         </fieldset>
         <fieldset>
-            <input type="checkbox" id="color"/>
+            <input type="checkbox" id="color" (change)="onCheckboxChange($event, null, 'bleu', null)"/>
             <label for="bleu">Bleu</label>
         </fieldset>
         <fieldset>
-            <input type="checkbox" id="color"/>
+            <input type="checkbox" id="color" (change)="onCheckboxChange($event, null, 'rose', null)"/>
             <label for="rose">Rose</label>
         </fieldset>
         <fieldset>
@@ -53,19 +53,19 @@
         <div class="ml-5">
 
         <fieldset>
-            <input type="checkbox" id="lvl1"/>
+            <input type="checkbox" id="lvl1" (change)="onCheckboxChange($event, null, null, 'lvl1')"/>
             <label for="lvl1">0-100TND</label>
         </fieldset>
         <fieldset>
-            <input type="checkbox" id="lvl2"/>
+            <input type="checkbox" id="lvl2" (change)="onCheckboxChange($event, null, null, 'lvl2')"/>
             <label for="lvl2">101-200TND</label>
         </fieldset>
         <fieldset>
-            <input type="checkbox" id="lvl3"/>
+            <input type="checkbox" id="lvl3" (change)="onCheckboxChange($event, null, null, 'lvl3')"/>
             <label for="lvl3">201-300TND</label>
         </fieldset>
         <fieldset>
-            <input type="checkbox" id="lvl4"/>
+            <input type="checkbox" id="lvl4" (change)="onCheckboxChange($event, null, null, 'lvl4')"/>
             <label for="lvl4">+300TND</label>
         </fieldset>
         </div>

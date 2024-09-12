@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../../services/product.service';
 import { switchMap } from 'rxjs';
+import { DataViewModule } from 'primeng/dataview';
+
+
 
 @Component({
   selector: 'dealshop-category',
@@ -9,6 +12,8 @@ import { switchMap } from 'rxjs';
   styleUrl: './category.component.css'
 })
 export class CategoryComponent implements OnInit{
+  layout: 'list' | 'grid' = 'grid';
+
 cols: any;
 onAddToCart($event: any) {
 throw new Error('Method not implemented.');
