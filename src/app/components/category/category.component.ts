@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../../services/product.service';
 import { switchMap } from 'rxjs';
-import { DataViewModule } from 'primeng/dataview';
 
 
 
@@ -37,7 +36,6 @@ throw new Error('Method not implemented.');
       this.products = productsList;
       console.log(this.products)
     });
-
     this.route.queryParams
     .pipe(
       switchMap(params => {
@@ -47,6 +45,8 @@ throw new Error('Method not implemented.');
     )
     .subscribe(products => {
       this.products = products;
+      console.log(this.products);
+      
     });
 }
   }

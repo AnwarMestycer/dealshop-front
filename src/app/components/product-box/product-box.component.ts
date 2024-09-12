@@ -12,11 +12,14 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class ProductBoxComponent implements OnInit {
 @Input() fullWidthMode = true;
 @Input() product : any | undefined
-@Input() discounted : boolean = false;
+discounted : boolean;
 @Output() addToCart = new EventEmitter()
   constructor() { }
 
   ngOnInit(): void {
+    if(this.product.discounted_price){
+      this.discounted = true;
+    }
   }
   onAddToCart():void{
     this.addToCart.emit(this.product)

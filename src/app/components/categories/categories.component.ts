@@ -21,8 +21,6 @@ onSelectCategory(categoryName: string) {
     queryParams: { category: categoryName },
   });
 }
-navigateToCategory(selectedCategory: String | undefined) {
- 
-}
+
 
 }
