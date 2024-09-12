@@ -15,6 +15,7 @@ import { ProductSliderComponent } from './components/product-slider/product-slid
 import { CategoryComponent } from './components/category/category.component';
 import { transformStatusPipe } from './pipes/transform-status.pipe';
 import { FiltersComponent } from './components/filters/filters.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FiltersComponent } from './components/filters/filters.component';
     CategoryComponent,
     transformStatusPipe,
     FiltersComponent,
+    ProductDetailsComponent,
   ],
   imports: [
     BrowserModule,
