@@ -13,7 +13,7 @@ export class ProductService {
     return this.http.get('http://localhost:8081/rest/load-list');
   }
   loadById(id: number):Observable<any>{
-    return this.http.get('http://localhost:8081/rest//load/' + id);
+    return this.http.get('http://localhost:8081/rest/load/' + id);
   }
   loadAllCategories(): Observable<any> {
     return this.http.get<any>('http://localhost:8081/rest/categories');

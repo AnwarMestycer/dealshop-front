@@ -11,6 +11,7 @@ import { ProductService } from '../../services/product.service';
 export class ProductDetailsComponent implements OnInit {
   product: any;
   id: number;
+quantity: number = 0;
   constructor(private route: ActivatedRoute, private productService: ProductService) {}
   ngOnInit(): void {
  

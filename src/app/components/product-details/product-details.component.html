@@ -1,2 +1,36 @@
-<p>{{id}}</p>
-<p>{{product.name}}</p>
+<div class="grid grid-rows-2 gap-4 h-full w-[100%]">
+    <div class="grid grid-cols-2 gap-4">
+        <div class="bg-blue-500 p-4">
+            <p>{{product.name}}</p>
+        </div>
+        <fieldset class="w-[200px] border-2 border-black right-0 h-full flex flex-col gap-2 items-center">
+            <legend class="p-2">Informations</legend>
+                <p>Réference: {{product.reference}}</p>
+                <p>Categorie: {{product.category}}</p>
+                <div class="w-[90%]">
+                    <label class="block">Taille</label>
+                    <select class="ml-2 h-[30px] w-[90%] rounded-md bg-white border-2 border-black text-sm text-center font-md">
+                        <option>Sans taille</option>
+                    </select>
+                </div>
+                <div class="w-[90%]">
+                    <label class="block">Couleur</label>
+
+                    <select class="ml-2 h-[30px] w-[90%] rounded-md bg-white border-2 border-black text-sm text-center font-md">
+                        <option>Gris</option>
+                        <option>Blanc</option>
+                        <option>Noir</option>
+                    </select>
+                    </div>
+                    <div class="ml-[40px] mt-[10px]">
+                        <label class="">Quantité</label>
+                        <input type="number" class="ml-2 border-2 border-black rounded-lg w-12 text-center font-semibold" [value]="quantity"/>
+                    </div>
+                    <button class="bg-orange-400 rounded-lg p-2 w-[80%]">Ajouter au panier</button>
+                    </fieldset>
+                    </div>
+                    
+                    <div class="bg-red-500 p-4">
+                        Second row content
+                    </div>
+                    </div>
